@@ -1,0 +1,213 @@
+================================================================
+                 DSA TREES — FINAL ROADMAP
+================================================================
+
+P1 — TREE FUNDAMENTALS
+================================================================
+ 01. Tree terminology
+ 02. TreeNode structure (val, left, right)
+ 03. Build a Binary Tree                         [buildTree]
+ 04. Binary Tree vs BST
+ 05. Height vs Depth                             *
+ 06. Tree levels vs edges
+ 07. Maximum nodes / levels / height formulas
+ 08. Full vs Complete vs Perfect vs Balanced     *
+ 09. Recursive thinking (base / recursive case)
+ 10. Recursion call stack                        *
+
+ FAQ:
+   - What is root, parent, child and leaf?
+   - Height vs depth: what is the difference?    *
+   - How many nodes can a binary tree have?
+   - What is a full vs complete vs perfect tree? *
+   - What makes a tree balanced?
+   - What is the base case in recursion?         *
+
+
+P2 — DFS TRAVERSALS
+================================================================
+ 11. Preorder Traversal                          LC #144
+ 12. Inorder Traversal                           LC #94
+ 13. Postorder Traversal                         LC #145
+ 14. Recursive DFS                               *
+ 15. Iterative DFS using Stack
+ 16. DFS execution / call stack visualization
+
+ FAQ:
+   - Preorder vs Inorder vs Postorder?           *
+   - When is the root processed?
+   - Why does postorder process children first?
+   - How does recursion return to parent?        *
+   - How to implement DFS using a stack?
+
+
+P3 — BFS / LEVEL ORDER TRAVERSALS
+================================================================
+ 17. Queue fundamentals
+ 18. Level Order Traversal                       LC #102
+ 19. Right Side View                             LC #199
+ 20. Zigzag Level Order                          LC #103
+ 21. Average of Levels                           LC #637
+ 22. Maximum Depth using BFS                     LC #104
+ 23. Minimum Depth using BFS                     LC #111
+
+ FAQ:
+   - DFS vs BFS: when to use which?              *
+   - Why do we use a queue?
+   - Why capture len(queue) before each level?   *
+   - How to identify the last node of a level?
+   - Why does BFS find minimum depth naturally?  *
+
+
+P4 — BASIC TREE RECURSION
+================================================================
+ 24. Maximum Depth using DFS                     LC #104
+ 25. Minimum Depth using DFS                     LC #111
+ 26. Same Tree                                   LC #100
+ 27. Symmetric Tree                              LC #101
+ 28. Invert Binary Tree                          LC #226
+ 29. Count nodes (basic recursive pattern)
+ 30. Leaf node detection
+
+ FAQ:
+   - What should DFS return?                     *
+   - What happens when node is None?
+   - Why return max(left, right) + 1?
+   - How do we compare two trees?
+   - Why do we need two recursive calls?
+   - What is the difference between return and print?
+
+
+P5 — BINARY SEARCH TREE (BST)
+================================================================
+ 31. BST properties                              *
+ 32. Build BST
+ 33. Search in BST                               LC #700
+ 34. Insert into BST                             LC #701
+ 35. Validate BST                                LC #98
+ 36. Kth Smallest Element                        LC #230
+ 37. Minimum Absolute Difference                 LC #530
+ 38. LCA in BST                                  LC #235
+ 39. Delete Node in BST                          LC #450
+ 40. Range Sum of BST                            LC #938
+ 41. Convert Sorted Array to BST                 LC #108
+
+ FAQ:
+   - Why is inorder traversal sorted?            *
+   - Why validate using min/max boundaries?      *
+   - Why is BST search O(log n) when balanced?
+   - What happens when duplicate values exist?
+   - How to find kth smallest?                   *
+   - How does BST deletion work?
+   - BST vs Binary Tree?                          *
+
+
+P6 — STRUCTURAL & POSTORDER PROBLEMS
+================================================================
+ 42. Subtree of Another Tree                     LC #572
+ 43. Balanced Binary Tree                        LC #110
+ 44. Height or Imbalanced Sentinel               *
+ 45. Diameter of Binary Tree                    LC #543
+ 46. Count Complete Tree Nodes                   LC #222
+
+ FAQ:
+   - What is a balanced binary tree?             *
+   - Why return -1 for an imbalanced subtree?
+   - Height vs Diameter?                         *
+   - Why can diameter pass through current node?
+   - Why calculate height using postorder?
+   - Why optimize repeated height calculations?  *
+
+
+P7 — TREE RELATIONSHIPS & CONSTRUCTION
+================================================================
+ 47. LCA in Binary Tree                          LC #236
+ 48. Construct Preorder + Inorder                LC #105
+ 49. Construct Inorder + Postorder               LC #106
+ 50. Construct Preorder + Postorder              LC #889 [Extra]
+ 51. Construct BST from Preorder                LC #1008
+ 52. Flatten Binary Tree                         LC #114
+
+ FAQ:
+   - How does preorder identify the root?        *
+   - How does inorder divide left and right?     *
+   - Why use a hashmap?
+   - How does recursion build subtrees?
+   - Can preorder + postorder uniquely build
+     every binary tree?
+   - How to find LCA without BST ordering?       *
+   - How to rearrange pointers when flattening?
+
+
+P8 — TREE PATH & SUM PATTERNS
+================================================================
+ 53. Path Sum                                    LC #112
+ 54. Path Sum II                                 LC #113
+ 55. Binary Tree Paths                           LC #257
+ 56. Sum Root to Leaf Numbers                    LC #129
+ 57. Path Sum III                                LC #437
+ 58. Maximum Path Sum                            LC #124
+ 59. House Robber III                            LC #337
+
+ FAQ:
+   - What is a root-to-leaf path?
+   - How to pass remaining target sum?
+   - Why use backtracking?                       *
+   - Path Sum II vs Path Sum III?                *
+   - What is prefix sum in a tree?               *
+   - Maximum Sum vs Maximum Gain?                *
+   - Why can returned gain use only one child?   *
+   - Why can global maximum use both children?   *
+   - Why does House Robber return two states?    *
+
+
+P9 — ADVANCED TREE PATTERNS
+================================================================
+ 60. Connect Next Pointers                       LC #116
+ 61. Connect Next Pointers II                    LC #117
+ 62. Next Pointer Chain
+ 63. BST Iterator                                LC #173
+ 64. All Nodes Distance K                        LC #863
+ 65. Vertical Order Traversal                    LC #987
+ 66. Maximum Width of Binary Tree                LC #662
+ 67. Serialize Binary Tree                       LC #297
+ 68. Deserialize Binary Tree                     LC #297
+ 69. Recursive Return vs Global Variable         *
+ 70. DFS Optimization
+ 71. Diameter DFS Optimization
+ 72. Maximum Path Sum DFS Optimization
+ 73. Height / Imbalanced Sentinel Optimization
+ 74. AVL Tree
+ 75. AVL Rotations (LL, RR, LR, RL)
+ 76. Red-Black Tree
+ 77. Tree Balancing
+
+ FAQ:
+   - When to use global variable vs return value? *
+   - How to connect next pointers?
+   - How to find nodes at distance K?
+   - How does BST Iterator use a stack?
+   - Why use null markers in serialization?      *
+   - AVL vs Red-Black Tree?                      *
+   - Why do rotations maintain BST ordering?
+
+================================================================
+                       END OF ROADMAP
+================================================================
+P10 — TRIE
+------------------------------------------------------------
+ 1. TrieNode structure
+ 2. Insert word
+ 3. Search word                         LC #208
+ 4. StartsWith                          LC #208
+ 5. Design Add and Search Words         LC #211
+ 6. Word Search II                      LC #212
+
+P11 — ADVANCED TREE THEORY
+------------------------------------------------------------
+ 1. AVL Tree
+ 2. AVL rotations
+ 3. Red-Black Tree
+ 4. B-Tree / B+ Tree
+ 5. Segment Tree
+ 6. Fenwick Tree / Binary Indexed Tree
